@@ -1,0 +1,3 @@
+<%= turbo_stream.update("embeddings-form", partial: "dashboard/embeddings_form") %>
+<%= turbo_stream.update("alert", partial: "dashboard/alert", 
+    locals: { text: @text }) %>

@@ -1,0 +1,9 @@
+<div class="px-3 py-4 rounded-lg bg-gray-100 border-2 border-green-500 mr-auto absolute top-8 left-8" id="alert-element"> 
+  <%= text %>
+</div>
+
+<%= javascript_tag do %>
+  setTimeout(() => {
+    document.querySelector("#alert-element").remove()
+  }, 2500)
+<% end %>

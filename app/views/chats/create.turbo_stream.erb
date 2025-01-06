@@ -1,0 +1,4 @@
+<%= turbo_stream.update("chat-response", partial: "dashboard/chat_message", 
+      locals: { text: @chat_result[0]["response"]}) %>
+
+<%= turbo_stream.update("chat-form", partial: "dashboard/chat_form") %>
